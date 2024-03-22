@@ -2,7 +2,6 @@ package Week1;
 
 import java.util.Locale;
 import java.util.ResourceBundle;
-import java.util.PropertyResourceBundle;
 import java.util.Date;
 import java.text.DateFormat;
 public class LocalDemo2 {
