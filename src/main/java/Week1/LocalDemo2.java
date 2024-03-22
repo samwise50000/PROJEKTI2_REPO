@@ -24,11 +24,13 @@ public class LocalDemo2 {
         DateFormat timeFormat = DateFormat.getDateTimeInstance(DateFormat.DEFAULT, DateFormat.DEFAULT, defaultLocale);
 
         ResourceBundle resourceBundle = ResourceBundle.getBundle("messages", defaultLocale);
+
+        String timeFormatPattern = resourceBundle.getString("timeFormatPattern");
         String greetings = resourceBundle.getString("greetings");
         String farewell = resourceBundle.getString("farewell");
         String inquiry = resourceBundle.getString("inquiry");
         System.out.println("Greetings: " + greetings + " farewell" + farewell + " " + inquiry);
-        System.out.println(timeFormat.format(currentDate) + " " + greetings + " " + farewell + " " + inquiry);
+        System.out.println(timeFormat.format(currentDate) + " " + greetings + " " + farewell + " " + inquiry + " " + timeFormatPattern);
 
 
     }
