@@ -90,7 +90,7 @@ public class EmployeeForm extends Application {
         String tableName = "employee_" + selectedLanguage;
 
         // Database connection parameters
-        String URL = "jdbc:mariadb://localhost:3306/demobase";
+        String URL = "jdbc:mariadb://localhost:3306/demobase?characterEncoding=UTF-8";
         String USERNAME = "root";
         String PASSWORD = "Testi123!?";
 
